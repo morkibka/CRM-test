@@ -1,0 +1,21 @@
+node_modules/
+
+dist/
+
+.env/
+
+*.log
+*.tmp
+
+# Playwright артефакты
+test-results/
+playwright-report/
+blob-report/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# ОС файлы
+.DS_Store
+Thumbs.db
+
