@@ -1,7 +1,5 @@
-import  defineConfig  from '@playwright/test';
-import dotenv from 'dotenv';
+import  {defineConfig}  from '@playwright/test';
 
-dotenv.config();
 
 
 export default defineConfig({
@@ -10,7 +8,5 @@ export default defineConfig({
     headless: false,
     screenshot: 'on',
     video: 'retain-on-failure',
-
-    loginURL: process.env.loginPage || 'http://localhost:3000',
   },
 });
