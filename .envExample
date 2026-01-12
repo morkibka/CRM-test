@@ -1,7 +1,7 @@
 # Данные для логина
-loginPage=
+loginPage=https:
 email=
 password=
-API_URL=
-API_ID=
 API_SECRET=
+API_ID=
+API_URL=

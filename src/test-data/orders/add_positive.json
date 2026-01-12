@@ -1,26 +1,25 @@
 [
 {
-  "data": {
     "order": {
-      "telephone": "example",
-      "country_iso_code": "AF",
-      "name": "example",
-      "email": "example",
-      "comment": "example",
+      "telephone": "+375447654321",
+      "country_iso_code": "BR",
+      "name": "Liam Carter",
+      "email": "liam.carter@example.com",
+      "comment": "Test order generated automatically",
       "address": {
-        "region": "example",
-        "sector": "example",
-        "city": "example",
-        "room": "example",
-        "floor": "example",
-        "house": "example",
-        "porch": "example",
-        "street": "example",
-        "building": "example",
-        "intercom": "example",
-        "index": "example",
-        "lat": "example",
-        "lon": "example"
+        "region": "North District",
+        "sector": "Sector 12",
+        "city": "Riverton",
+        "room": "45B",
+        "floor": "7",
+        "house": "221",
+        "porch": "3",
+        "street": "Maple Avenue",
+        "building": "Block C",
+        "intercom": "9021",
+        "index": "45890",
+        "lat": "53.9123",
+        "lon": "27.5511"
       },
       "offers": [
         {
@@ -46,30 +45,29 @@
         }
       ]
     }
-  }
-}, 
+
+},
 {
-  "data": {
     "order": {
-      "telephone": "example",
-      "country_iso_code": "AF",
-      "name": "example",
-      "email": "example",
-      "comment": "example",
+      "telephone": "+375333209874",
+      "country_iso_code": "CL",
+      "name": "Sofia Mendes",
+      "email": "sofia.mendes@example.org",
+      "comment": "Auto-generated test order",
       "address": {
-        "region": "example",
-        "sector": "example",
-        "city": "example",
-        "room": "example",
-        "floor": "example",
-        "house": "example",
-        "porch": "example",
-        "street": "example",
-        "building": "example",
-        "intercom": "example",
-        "index": "example",
-        "lat": "example",
-        "lon": "example"
+        "region": "Central Province",
+        "sector": "Sector 8",
+        "city": "Lakeside",
+        "room": "12A",
+        "floor": "4",
+        "house": "87",
+        "porch": "1",
+        "street": "Willow Street",
+        "building": "Tower B",
+        "intercom": "5532",
+        "index": "78214",
+        "lat": "54.0012",
+        "lon": "27.6129"
       },
       "offers": [
         {
@@ -96,5 +94,5 @@
       ]
     }
   }
-}
 ]
+
