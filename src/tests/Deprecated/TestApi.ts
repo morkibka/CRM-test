@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { ApiHelper } from '../Helpers/APIconfig.js';
+import { ApiHelper } from '../helpers/sendRequest.js';
 
 test('POST /orders/add with body', async () => {
-      const apiURL = String(process.env.API_URL);
+        const apiURL = String(process.env.API_URL);
 
   const api = new ApiHelper(apiURL);
 
@@ -31,10 +31,10 @@ test('POST /orders/add with body', async () => {
       },
       offers: [
         {
-          cid: 0,
+          cid: 1,
           count: 1,
-          cost: 100,
-          all_cost: 100
+          cost: 1,
+          all_cost: 1
         }
       ]
     }
@@ -43,7 +43,7 @@ test('POST /orders/add with body', async () => {
 const response = await api.sendRequest(
   'POST',
   data,
-  '/rest/api/catalog/offer-list'   
+  '/rest/api/orders/add'   // 🔥 ВОТ ЭТО ГЛАВНОЕ
 );
 
 console.dir(response, { depth: 10 });

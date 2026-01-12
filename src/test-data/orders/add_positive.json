@@ -1,0 +1,106 @@
+[
+{
+  "data": {
+    "order": {
+      "telephone": "example",
+      "country_iso_code": "AF",
+      "name": "example",
+      "email": "example",
+      "comment": "example",
+      "address": {
+        "region": "example",
+        "sector": "example",
+        "city": "example",
+        "room": "example",
+        "floor": "example",
+        "house": "example",
+        "porch": "example",
+        "street": "example",
+        "building": "example",
+        "intercom": "example",
+        "index": "example",
+        "lat": "example",
+        "lon": "example"
+      },
+      "offers": [
+        {
+          "id": 1,
+          "cid": 1,
+          "count": 1,
+          "cost": 1,
+          "proceeds": 0,
+          "all_cost": 0,
+          "discount": 0,
+          "total": 0,
+          "discount_type": "proceeds",
+          "discount_calc_type": "percent",
+          "salary_manager": 0,
+          "salary_worker": 0,
+          "salary_courier": 0,
+          "method_manager": "unit",
+          "method_worker": "unit",
+          "method_courier": "unit",
+          "all_salary_manager": 0,
+          "all_salary_worker": 0,
+          "all_salary_courier": 0
+        }
+      ]
+    }
+  },
+  "timestamp": 0,
+  "api_id": null,
+  "signature": null
+}, 
+{
+  "data": {
+    "order": {
+      "telephone": "example",
+      "country_iso_code": "AF",
+      "name": "example",
+      "email": "example",
+      "comment": "example",
+      "address": {
+        "region": "example",
+        "sector": "example",
+        "city": "example",
+        "room": "example",
+        "floor": "example",
+        "house": "example",
+        "porch": "example",
+        "street": "example",
+        "building": "example",
+        "intercom": "example",
+        "index": "example",
+        "lat": "example",
+        "lon": "example"
+      },
+      "offers": [
+        {
+          "id": 1,
+          "cid": 1,
+          "count": 1,
+          "cost": 1,
+          "proceeds": 0,
+          "all_cost": 0,
+          "discount": 0,
+          "total": 0,
+          "discount_type": "proceeds",
+          "discount_calc_type": "percent",
+          "salary_manager": 0,
+          "salary_worker": 0,
+          "salary_courier": 0,
+          "method_manager": "unit",
+          "method_worker": "unit",
+          "method_courier": "unit",
+          "all_salary_manager": 0,
+          "all_salary_worker": 0,
+          "all_salary_courier": 0
+        }
+      ]
+    }
+  },
+  "timestamp": 0,
+  "api_id": null,
+  "signature": null
+}
+]

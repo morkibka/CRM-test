@@ -33,7 +33,7 @@ test("POST /catalog/offer-list", async ({ request }) => {
     };
 
     const response = await request.post(
-        "apiURL" + path,
+        apiURL + path,
         {
             headers: {
                 "Content-Type": "application/json",
