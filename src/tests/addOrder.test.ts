@@ -18,7 +18,7 @@ test.describe("add order positive tests", () => {
         test(`Positive pack checks #${i} ${JSON.stringify(params)} `, async ({
                                                                                  request,
                                                                              }) => {
-            const timestamp = Date.now();
+            const timestamp = Math.floor(Date.now() / 1000);
             const payload = base.buildPayload(params, timestamp, ADD_POST_PATH);
             const signature = base.crypt(secret, payload);
             const body = base.buildBody(params, timestamp, apiId, signature);

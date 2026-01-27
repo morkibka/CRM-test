@@ -43,7 +43,7 @@ test('POST /orders/add with body', async () => {
 const response = await api.sendRequest(
   'POST',
   data,
-  '/rest/api/orders/add'   // 🔥 ВОТ ЭТО ГЛАВНОЕ
+  '/rest/api/orders/add'
 );
 
 console.dir(response, { depth: 10 });

@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,7 +19,8 @@
   },
   "scripts": {
     "add": "playwright test src/tests/addOrder.test.ts",
-    "old": "playwright test src/tests/Deprecated/Test.test.ts"
+    "old": "playwright test src/tests/Deprecated/Test.test.ts",
+    "dev": "playwright test src/tests/dev.test.ts"
   }
 
 }

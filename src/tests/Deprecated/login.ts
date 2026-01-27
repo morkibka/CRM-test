@@ -13,17 +13,17 @@ const password = process.env.password || '';
 
 
 // простой тест на проверку наличия тайтла
-/*
+
 test('is Title on login page', async ({ page }) => {
 const loginPage = process.env.loginPage || 'http://localhost:3000';
  await page.goto(loginPage);
   const title = await page.locator('xpath=//div[@class=\'title\']').textContent();
   expect(title).toBe('Login');
 });
-*/
+
 
 // не пускает из-за клаудфларе
-/*
+
 test('login sucesses', async ({ page }) => {
  await page.goto(loginPage);
   await page.fill("xpath=//input[@formcontrolname='email']", email);
@@ -37,6 +37,6 @@ await expect(projects.first()).toBeVisible();
 
 
 });
-*/
+
 
 
