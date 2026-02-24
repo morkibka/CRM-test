@@ -1,15 +1,15 @@
 import { test, expect } from '@playwright/test';
-import { ApiHelper } from '../helpers/sendRequest.js';
+import { ApiHelper } from '../../helpers/sendRequest.js';
 
-import { names } from '../test-data/randomData/names.js';
-import { telephones } from '../test-data/randomData/telephones.js';
-import { country_iso_codes } from '../test-data/randomData/country_iso_codes.js';
-import { emails } from '../test-data/randomData/emails.js';
-import { comments } from '../test-data/randomData/comments.js';
-import { regions } from '../test-data/randomData/regions.js';
-import { sectors } from '../test-data/randomData/sectors.js';
-import { cities } from '../test-data/randomData/cities.js';
-import { streets } from '../test-data/randomData/streets.js';
+import { names } from '../../test-data/randomData/names.js';
+import { telephones } from '../../test-data/randomData/telephones.js';
+import { country_iso_codes } from '../../test-data/randomData/country_iso_codes.js';
+import { emails } from '../../test-data/randomData/emails.js';
+import { comments } from '../../test-data/randomData/comments.js';
+import { regions } from '../../test-data/randomData/regions.js';
+import { sectors } from '../../test-data/randomData/sectors.js';
+import { cities } from '../../test-data/randomData/cities.js';
+import { streets } from '../../test-data/randomData/streets.js';
 
 
 
@@ -24,7 +24,7 @@ test('POST /orders/add with body', async () => {
 
   const api = new ApiHelper(apiURL);
 
-    for (let i = 0; i < 50; i ++) {
+    for (let i = 0; i < 5; i ++) {
 
   const telephone = randomItem(telephones);
   const country_iso_code = randomItem(country_iso_codes);

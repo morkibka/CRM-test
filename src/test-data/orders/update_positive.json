@@ -1,0 +1,23 @@
+[
+  {
+    "id": 7100,
+    "prop": {
+      "status": 1,
+      "comment": "Positive test - status update"
+    }
+  },
+  {
+    "id": 7100,
+    "prop": {
+      "status": 5,
+      "comment": "Positive test - completed status"
+    }
+  },
+  {
+    "id": 7100,
+    "prop": {
+      "manager": 1,
+      "comment": "Positive test - assign manager"
+    }
+  }
+]

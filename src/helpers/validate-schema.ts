@@ -22,3 +22,19 @@ export async function validateSchema(
   }
   return valid;
 }
+
+export function validateSchemaObject(
+  data: any,
+  schemaPath: string
+): boolean {
+  const ajv = new Ajv();
+  // Validate the response schema
+  const absolutePath = path.resolve(process.cwd(), schemaPath);
+  const schema = JSON.parse(fs.readFileSync(absolutePath, "utf8"));
+  const valid = ajv.validate(schema, data);
+  // Output the errors text
+  if (!valid) {
+    console.error("AJV Validation Errors:", ajv.errorsText());
+  }
+  return valid;
+}

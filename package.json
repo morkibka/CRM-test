@@ -18,9 +18,44 @@
     "dotenv": "^17.2.3"
   },
   "scripts": {
-    "add": "playwright test src/tests/addOrder.test.ts",
-    "old": "playwright test src/tests/Deprecated/Test.test.ts",
-    "dev": "playwright test src/tests/dev.test.ts"
-  }
+    "test:all": "playwright test",
+    "test:orders": "playwright test src/tests/orders/",
+    "test:users": "playwright test src/tests/users/",
+    "test:catalog": "playwright test src/tests/catalog/",
+    "test:statuses": "playwright test src/tests/statuses/",
+    "test:schema": "playwright test src/tests/schema/",
+    "test:deprecated": "playwright test src/tests/Deprecated/",
 
+    "orders:add-file": "playwright test src/tests/orders/add-fromFile.test.ts",
+    "orders:add-random": "playwright test src/tests/orders/add-random.test.ts",
+    "orders:get": "playwright test src/tests/orders/get.test.ts",
+    "orders:get-short": "playwright test src/tests/orders/getShort.test.ts",
+    "orders:get-short-id": "playwright test src/tests/orders/getShortBySourceId.test.ts",
+    "orders:update": "playwright test src/tests/orders/update.test.ts",
+    "orders:update-pos": "playwright test src/tests/orders/update.test.ts --grep 'positive'",
+    "orders:update-neg": "playwright test src/tests/orders/update.test.ts --grep 'negative'",
+    "orders:open": "playwright test src/tests/orders/open.test.ts",
+    "orders:open-pos": "playwright test src/tests/orders/open.test.ts --grep 'positive'",
+    "orders:open-neg": "playwright test src/tests/orders/open.test.ts --grep 'negative'",
+
+    "users:online": "playwright test src/tests/users/online.test.ts",
+    "users:online-pos": "playwright test src/tests/users/online.test.ts --grep 'positive'",
+    "users:online-neg": "playwright test src/tests/users/online.test.ts --grep 'negative'",
+    "users:list": "playwright test src/tests/users/user-name-list.test.ts",
+    "users:list-pos": "playwright test src/tests/users/user-name-list.test.ts --grep 'positive'",
+    "users:list-neg": "playwright test src/tests/users/user-name-list.test.ts --grep 'negative'",
+
+    "catalog:offer-list": "playwright test src/tests/catalog/offer-list.test.ts",
+    "catalog:category": "playwright test src/tests/catalog/category-list.test.ts",
+    "catalog:category-pos": "playwright test src/tests/catalog/category-list.test.ts --grep 'positive'",
+    "catalog:category-neg": "playwright test src/tests/catalog/category-list.test.ts --grep 'negative'",
+
+    "statuses:list": "playwright test src/tests/statuses/list.test.ts",
+    "statuses:list-pos": "playwright test src/tests/statuses/list.test.ts --grep 'positive'",
+    "statuses:list-neg": "playwright test src/tests/statuses/list.test.ts --grep 'negative'",
+
+    "schema": "playwright test src/tests/schema/schema.test.ts",
+
+    "deprecated": "playwright test src/tests/Deprecated/Test.test.ts"
+  }
 }

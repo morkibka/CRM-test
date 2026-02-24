@@ -46,7 +46,7 @@ export class ApiHelper {
   }
 
   private generateSignature(data: any, timestamp: number, path: string): string {
-    const jsonData = phpJsonEncode(data);
+    const jsonData = JSON.stringify(data);
     const payload = jsonData + timestamp + path;
 
     console.log('PAYLOAD ' + payload);
@@ -91,6 +91,7 @@ export class ApiHelper {
 
     const response = await fetch(finalUrl, {
       method,
+      //@ts-ignore
       headers: finalHeaders,
       body: method === 'GET' ? null : JSON.stringify(body),
     });
@@ -104,7 +105,8 @@ export class ApiHelper {
       parsed = raw;
     }
 
-    console.log('⬅️ Ответ сервера:', parsed);
+    
+console.log('⬅️ Ответ сервера:', JSON.stringify(parsed, null, 2));
 
     if (!response.ok) {
       throw new Error(`API error ${response.status}: ${JSON.stringify(parsed)}`);

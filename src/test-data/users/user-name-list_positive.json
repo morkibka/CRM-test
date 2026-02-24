@@ -1,0 +1,14 @@
+[
+  {
+    "uid_list": [1, 2, 3],
+    "role_list": [1, 2]
+  },
+  {
+    "uid_list": [],
+    "role_list": []
+  },
+  {
+    "uid_list": [1],
+    "role_list": [1]
+  }
+]

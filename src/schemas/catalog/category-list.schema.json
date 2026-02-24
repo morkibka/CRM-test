@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "errors": {
+      "type": ["object", "null"],
+      "properties": {
+        "code": {
+          "enum": ["Unauthorized", "BadRequest", "Forbidden", "NotFound", "MethodNotAllowed", "LicenseModuleDisabled", "ProjectDisabled", "LowBalance", "LicenseRowLimit"],
+          "type": "string"
+        },
+        "message": {
+          "type": ["string", "array"]
+        },
+        "details": {
+          "type": "object",
+          "properties": {
+            "field_errors": {
+              "type": "array",
+              "items": {}
+            },
+            "non_field_errors": {
+              "type": "array",
+              "items": {}
+            }
+          }
+        }
+      }
+    },
+    "result": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "parent": {
+            "type": ["number", "null"]
+          }
+        }
+      }
+    },
+    "signature": {
+      "type": ["string", "null"]
+    },
+    "date": {
+      "type": "string",
+      "description": "utc"
+    }
+  },
+  "required": ["result", "date"]
+}

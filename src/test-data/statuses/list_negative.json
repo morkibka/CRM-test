@@ -1,0 +1,13 @@
+[
+  {
+    "data": "invalid_string_instead_of_object"
+  },
+  {
+    "data": 12345
+  },
+  {
+    "data": {
+      "invalid_field": "should_not_be_here"
+    }
+  }
+]

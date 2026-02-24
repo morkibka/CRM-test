@@ -1,7 +1,7 @@
 import {test, expect} from "@playwright/test";
-import testDataPositive from "../test-data/orders/add_positive.json" with {type: "json"};
-import {validateSchema} from "../helpers/validate-schema.js" ;
-import {BaseTest} from "../helpers/baseTest.js";
+import testDataPositive from "../../test-data/orders/add_positive.json" with {type: "json"};
+import {validateSchema} from "../../helpers/validate-schema.js" ;
+import {BaseTest} from "../../helpers/baseTest.js";
 import dotenv from 'dotenv';
 dotenv.config();
 

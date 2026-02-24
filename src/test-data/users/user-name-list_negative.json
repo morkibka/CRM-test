@@ -1,0 +1,14 @@
+[
+  {
+    "uid_list": [999999999],
+    "role_list": [999999999]
+  },
+  {
+    "uid_list": "invalid_string",
+    "role_list": [1]
+  },
+  {
+    "uid_list": [1],
+    "role_list": "invalid_string"
+  }
+]

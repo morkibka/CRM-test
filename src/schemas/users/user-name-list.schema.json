@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "errors": {
+      "type": ["object", "null"],
+      "properties": {
+        "code": {
+          "enum": ["Unauthorized", "BadRequest", "Forbidden", "NotFound", "MethodNotAllowed", "LicenseModuleDisabled", "ProjectDisabled", "LowBalance", "LicenseRowLimit"],
+          "type": "string"
+        },
+        "message": {
+          "type": ["string", "array"]
+        },
+        "details": {
+          "type": "object",
+          "properties": {
+            "field_errors": {
+              "type": ["object", "array"]
+            },
+            "non_field_errors": {
+              "type": "array",
+              "items": {}
+            }
+          }
+        }
+      }
+    },
+    "result": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uid": {
+            "type": "number"
+          },
+          "fio": {
+            "type": "string"
+          },
+          "role": {
+            "type": "number"
+          },
+          "department": {
+            "type": ["number", "null"]
+          },
+          "enable": {
+            "type": "boolean"
+          },
+          "sip": {
+            "type": ["number", "null"]
+          }
+        }
+      }
+    },
+    "signature": {
+      "type": ["string", "null"]
+    },
+    "date": {
+      "type": "string",
+      "description": "utc"
+    }
+  },
+  "required": ["result", "date"]
+}
