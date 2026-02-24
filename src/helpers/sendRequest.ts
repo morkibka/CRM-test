@@ -7,36 +7,7 @@ const apiURL = process.env.API_URL || '';
 const secretKey = process.env.API_SECRET || '';
 const apiId = Number(process.env.API_ID || 0);
 
-// Эмуляция PHP json_encode (важное — Unicode → \uXXXX)
-function phpJsonEncode(value: any): string {
-  const json = JSON.stringify(
-      value,
-      (key, val) => {
-        if (val === undefined) return null;
 
-        if (typeof val === 'number') {
-          if (Number.isInteger(val)) return val;
-          return Number(val.toString());
-        }
-
-        return val;
-      }
-  );
-
-  // Экранируем слэши как PHP
-  const withSlashes = json.replace(/\//g, '\\/');
-
-  // Экранируем не-ASCII в \uXXXX (как json_encode без JSON_UNESCAPED_UNICODE)
-  const withUnicodeEscaped = withSlashes.replace(
-      /[\u007F-\uFFFF]/g,
-      (ch) => {
-        const code = ch.charCodeAt(0).toString(16).padStart(4, '0');
-        return '\\u' + code;
-      }
-  );
-
-  return withUnicodeEscaped;
-}
 
 export class ApiHelper {
   private url: string;
